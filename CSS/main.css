@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+html, a {
+	font-family: 'Roboto', sans-serif;
+}
+html, body {
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	margin-right: 0;
+	margin-left: 0;
+	background-image: url(../images/background_header.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	box-shadow: 0 10px 10px #8a8080;
+}
+
+.container {
+	flex: 1 0 auto;
+}
+
+.container_header {
+	max-width: 1140px;	
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px;
+	align-items: center;
+}
+
+.container_header .logo {
+	width: 30%;
+	display: flex;
+	align-items: center;
+}
+
+.container_header .navigation{
+	width: 70%;
+}
+
+.container_header .navigation .nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+main {
+	background: #7dc0d0;
+}
+
+.pages {
+	background: #7dc0d0;
+	height: 100%;
+}
+
+.nav li {
+	list-style-type: none;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: #e0e043;
+	font-weight: bold;
+	transition: .5s;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+.nav li a:hover {
+	color: red;
+	text-shadow: none;
+}
+
+.active {
+	color: red!important;
+	text-shadow: none!important;
+} 
+
+.container_main {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.zodiak {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.zodiak li {
+	width: 286px;
+	text-align: center;
+	margin: 50px 0;
+}
+
+.img_wrap a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+	border-radius: 15px;
+	height: 250px;
+	justify-content: space-around;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}
+
+.img_wrap a:hover {
+	box-shadow: 0px 0px 60px aqua;
+	border: 1px solid #ccc;
+}
+
+.img_wrap img {
+	background-image: url(../images/background_zodiak.jpg);
+	border-radius: 15px;
+}
+
+.img_wrap img:hover {
+	transition: 1s;
+	transform: rotate(360deg);
+}
+
+.name_z {
+	font-size: 30px;
+	font-weight: bolder;
+	color: #de6761;
+}
+
+.date_z {
+	color: #777;
+}
+
+.descr {
+	color: #333;
+}
+
+.descr_z {
+	display: flex;
+	align-items: center;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 150px;
+}
+
+.logo_z {
+	padding: 30px 30px 30px 0;
+}
+
+.logo_z img {
+	background-image: url(../images/background_zodiak.jpg);
+	height: 250px;
+	width: 250px; 
+	border-radius: 100px;
+}
+
+.logo_z p {
+	text-align: center;
+}
+
+
+
+footer {
+	flex-shrink: 0;
+	width: 100%;
+	background-image: url(../images/background_header.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container_footer {
+	max-width: 1140px;
+	margin: 0 auto;
+	color: white;
+	padding: 35px;
+}
+
